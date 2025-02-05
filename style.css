@@ -1,0 +1,15 @@
+/* styles.css - External CSS */
+
+body {
+    background-image: url('background.jpg'); /* Make sure to add a background image in the same directory */
+    background-size: cover;
+    background-position: center;
+}
+
+h1, h2 {
+    color: #fff; /* Internal style */
+}
+
+#registration {
+    border: 2px solid #007bff; /* Border */
+    padding: 2px;}

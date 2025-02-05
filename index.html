@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <header class="bg-primary text-white text-center p-3">
+        <h1>Student Registration System</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#registration">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#library">Library</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <section id="registration">
+            <h2>Register Here</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="course">Select Course:</label>
+                    <select class="form-control" id="course">
+                        <option>Computer Science</option>
+                        <option>Mathematics</option>
+                        <option>Physics</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </section>
+
+        <section id="courses" class="mt-5">
+            <h2>Available Courses</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Course ID</th>
+                        <th>Course Name</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CS101</td>
+                        <td>Introduction to Computer Science</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>MA101</td>
+                        <td>Calculus I</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="library" class="mt-5">
+            <h2>Library Resources</h2>
+            <ul>
+                <li>< a href="https://www.example.com/book1" target="_blank">Book 1</a></li>
+                <li>< a href="https://www.example.com/book2" target="_blank">Book 2</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2023 Student Registration System</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
